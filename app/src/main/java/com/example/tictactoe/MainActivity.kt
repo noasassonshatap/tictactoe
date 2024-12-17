@@ -1,6 +1,7 @@
 package com.example.tictactoe
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +17,11 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val title: TextView = findViewById(R.id.header);
+        title.text = getString(R.string.app_name);
+
+        val sec: TextView = findViewById(R.id.secondary_header);
+        sec.text = getString(R.string.who_plays);
     }
 }
