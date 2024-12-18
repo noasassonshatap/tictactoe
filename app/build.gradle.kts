@@ -7,6 +7,10 @@ android {
     namespace = "com.example.tictactoe"
     compileSdk = 35
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.example.tictactoe"
         minSdk = 25
